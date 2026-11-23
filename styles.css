@@ -145,3 +145,19 @@ main {
     /* Toma 3 partes del ancho disponible (~75%) */
     padding: 0;
 }
+
+
+
+
+/*Modo claro*/
+body.modo-claro {
+    background-color: #f4f4f9;
+    color: #22223b;
+}
+
+body.modo-claro header,
+body.modo-claro section,
+body.modo-claro aside,
+body.modo-claro footer {
+    background-color: #ffffff;
+}
