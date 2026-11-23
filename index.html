@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi_J_primera web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Hola, mundo, mi primer html :3</h1>
+        <h2>iJoseG</h2>
+        <nav>
+            <ul>
+                <li><a href="#botones">Button</a></li>
+                <li><a href="#enlaces">Enlaces</a></li>
+                <li><a href="#imagenes">Imagenes</a></li>
+                <li><a href="#listas">Lista</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#tablas">Tabla</a></li>
+                <li><a href="perfil.html">Sobre mi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-principal">
+        <main>
+
+            <section>
+                <p>Este es mi primer paso en el desarrollo web.</p>
+                <p>Como hago un salto de linea? solo coloco otro p</p>
+                <p>Salto de linea con br <br> probando br</p>
+            </section>
+
+            <section id="botones">
+                <h2>Botones </h2>
+                <button onclick="alert('¡Funciona!')">Haz clic aquí</button>
+                <button class="btn-dark">Dark Sunday</button>
+            </section>
+
+            <section id="enlaces">
+                <h2> Tamaños de titulos del h2 al h6 </h2>
+                <h2> Esto es un h2 </h2>
+                <h3> Esto es un h3 </h3>
+                <h4> Esto es un h4 </h4>
+                <h5> Esto es un h5 </h5>
+                <h6> Esto es un h6 </h6>
+
+                <h2> Descarga lolsito mirei </h2>
+                <a href="https://www.leagueoflegends.com/es-mx/download/" target="_blank" rel="noopener noreferrer">
+                    league
+                    of
+                    legends </a>
+                <p>target="_blank" hace que el enlace se abra en una nueva pestaña</p>
+
+                <h2>Documentacion de desarrollo web</h2>
+                <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">Aprender en
+                    MDN</a>
+            </section>
+
+            <section id="imagenes">
+                <h2>Adjuntando imagenes</h2>
+                <p>imagenes</p>
+                <img src="https://i.pinimg.com/originals/73/91/8f/73918f1647bff48f385116df6b676ca7.jpg"
+                    alt="Diana lolsito" width="100">
+
+                <img src="imagenes/diana_chibi.jpg" alt="diana chibi desde archivos" width="100">
+
+                <p>Imagen que contiene enlace:</p>
+                <a href="https://mobalytics.gg/lol/champions/diana/build/mid" target="_blank" rel="noopener noreferrer">
+                    <img src="imagenes/diana_chibi.jpg" alt="diana chibi desde archivos" width="100"></a>
+
+            </section>
+
+            <section id="listas">
+                <h2>Cosas que quiero <strong>aprender</strong> y mis <em>hobbies</em></h2>
+                <h3> Mis Hobbies</h3>
+                <ul>
+                    <li>Linux</li>
+                    <li>Los videojuegos</li>
+                    <li>Escuchar musica</li>
+                </ul>
+                <h3> Para aprender</h3>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+            </section>
+
+
+            <section id="formulario">
+                <h2>Contacto</h2>
+                <form action="#" method="POST">
+                    <div>
+                        <label for="nombre">Tu nombre: </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Jose" required>
+                    </div>
+                    <div>
+                        <label for="correo">Correo: </label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje: </label>
+                        <textarea id="mensaje" name="mensaje" rows="1"></textarea>
+                    </div>
+                    <div>
+                        <label for="check">¿Eres mayor de edad?: </label>
+                        <input type="checkbox" id="check" name="check">
+                    </div>
+                    <div>
+                        <label for="lista-desplegable"> ¿Cual es tu color favorito?</label>
+                        <select id="lista-desplegable" name="lista-desplegable">
+                            <option value="rojo">Rojo</option>
+                            <option value="azul">Azul</option>
+                            <option value="verde">Verde</option>
+                            <option value="amarillo">Amarillo</option>
+                            <option value="negro">Negro</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <section id="tablas">
+                <h2>Tabla</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Función</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Estructura</td>
+                            <td>En progreso</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Diseño</td>
+                            <td>Siguiente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <div class="galeria">
+                    <img src="imagenes/luna.png" alt="luna 1" width="100">
+                    <img src="imagenes/luna2.avif" alt="luna 2" width="100">
+                    <img src="imagenes/luna3.webp" alt="luna 3" width="100">
+                    <img src="imagenes/lunaw4.jpg" alt="luna 4" width="100">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <img src="imagenes/luna.png" alt="luna 1" width="100">
+                    <img src="imagenes/luna2.avif" alt="luna 2" width="100">
+                    <img src="imagenes/luna3.webp" alt="luna 3" width="100">
+                    <img src="imagenes/lunaw4.jpg" alt="luna 4" width="100">
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <a href="https://github.com/iJoseG" target="_blank" rel="noopener noreferrer">Mi Github</a>
+
+        </aside>
+    </div>
+    <footer>
+        <p> Un footer es la parte final de una página web que contiene información como el copyright, enlaces a
+            otras
+            páginas y información de contacto.</p>
+        <a href="#">Volver arriba</a>
+        <p> &copy; 2026 - iJoseG</p>
+    </footer>
+
+</body>
+
+</html>
