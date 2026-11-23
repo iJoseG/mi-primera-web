@@ -161,3 +161,61 @@ body.modo-claro aside,
 body.modo-claro footer {
     background-color: #ffffff;
 }
+
+
+/* Calculadora */
+
+.calculadora {
+    max-width: 320px;
+    margin: 0 auto;
+    /* Centra la calculadora */
+}
+
+.display-calc {
+    text-align: right;
+    font-size: 2rem;
+    font-family: monospace;
+    padding: 16px;
+    margin-bottom: 12px;
+    overflow-x: auto;
+    /* Evita que un número largo rompa la caja */
+}
+
+
+.display-calc p {
+    margin: 0;
+}
+
+.contenedor-calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas exactamente iguales */
+    gap: 10px;
+}
+
+.contenedor-calculadora button {
+    font-size: 1.2rem;
+    padding: 16px;
+}
+
+/* Colores por tipo de botón (opcional) */
+.bt-op {
+    background-color: #7c3aed;
+    color: white;
+}
+
+.bt-clear {
+    background-color: #af6666;
+    color: white;
+}
+
+.bt-del {
+    background-color: #af6666;
+    color: white;
+}
+
+.bt-eq {
+    background-color: #16a34a;
+    color: white;
+    grid-column: span 4;
+}
